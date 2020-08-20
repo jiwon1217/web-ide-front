@@ -23,7 +23,8 @@
     "react-scripts": "3.4.1",
     "react-simple-code-editor": "^0.11.0",
     "redux": "^4.0.5",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "terminal-in-react": "^4.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
