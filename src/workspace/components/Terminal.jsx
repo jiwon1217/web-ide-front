@@ -14,8 +14,12 @@ function Terminal(props) {
   const [output, setOutput] = useState('');
 
   const addOutput = (input) => {
-    const newOutput = output + '\n' + input;
-    setOutput(newOutput);
+    if (input === 'clear') {
+      setOutput('');
+    } else {
+      const newOutput = output + '\n' + input;
+      setOutput(newOutput);
+    }
   };
 
   return (

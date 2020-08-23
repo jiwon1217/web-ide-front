@@ -6,16 +6,21 @@ import InputBase from '@material-ui/core/InputBase';
 const useStyles = makeStyles((theme) => ({
   input: {
     border: 'none',
-    padding: '5px 10px',
+    padding: '5px',
     width: '100%',
+    color: 'lime',
   },
   form: {
-    width: '100%',
+    width: '99%',
+    maxWidth: '150ch',
+    color: 'lime',
   },
 }));
 
 function InputPrompt({ submit }) {
   const classes = useStyles();
+  const bashIcon = '$';
+
   const [value, setValue] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,6 +34,9 @@ function InputPrompt({ submit }) {
     <div>
       <form onSubmit={handleSubmit} className={classes.form}>
         <FormControlLabel
+          className={classes.form}
+          label={bashIcon}
+          labelPlacement="start"
           control={
             <InputBase
               placeholder="입력"
@@ -37,9 +45,6 @@ function InputPrompt({ submit }) {
               value={value}
             />
           }
-          label="$"
-          labelPlacement="start"
-          className={classes.form}
         />
       </form>
     </div>

@@ -82,7 +82,6 @@ function ProjectItemCard(props) {
       updateProjectValues.type = props.type;
     }
 
-    console.log(updateProjectValues);
     Api({
       method: 'PUT',
       url: `/projects/${pid}`,

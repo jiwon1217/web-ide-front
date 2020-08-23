@@ -1,17 +1,8 @@
 import React from 'react';
-import Terminal from 'terminal-in-react';
+import { Terminal } from './';
+
 function BottomPanel(props) {
-  return (
-    <Terminal
-      hideTopBar={true}
-      allowTabs={false}
-      promptSymbol={'$'}
-      prompt={'lime'}
-      color={'lime'}
-      backgroundColor={'black'}
-      startState={'maximised'}
-    />
-  );
+  return <Terminal />;
 }
 
 export default BottomPanel;

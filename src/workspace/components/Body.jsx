@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: '1px solid gray',
   },
   bottomPanel: {
-    height: '25vh',
+    height: '25%',
+    backgroundColor: 'black',
   },
 }));
 
